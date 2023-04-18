@@ -13,6 +13,11 @@ namespace TestAec.API.Controllers
     {
         private readonly ICardQuery CardQuery;
 
+        public ProcessarController(ICardQuery cardQuery)
+        {
+            CardQuery = cardQuery;
+        }
+
 
         /// <summary>
         /// Processa os dados do site Aec
