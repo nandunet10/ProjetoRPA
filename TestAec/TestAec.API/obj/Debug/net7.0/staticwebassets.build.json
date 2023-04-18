@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BrSwukRgXhnfOLB1e1RS5pOXWrbrG0k5GGiPz5dnB+A=",
+  "Source": "TestAec.API",
+  "BasePath": "_content/TestAec.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
