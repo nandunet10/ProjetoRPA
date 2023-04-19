@@ -1,7 +1,7 @@
-﻿using TestAec.API.Requests;
+﻿using TestAec.Domain.AggregatesModel.ViewModel;
 using TestAec.Domain.Exceptions;
 
-namespace TestAec.API.Queries.Abstractions
+namespace TestAec.Domain.AggregatesModel
 {
     public interface ICardQuery
     {

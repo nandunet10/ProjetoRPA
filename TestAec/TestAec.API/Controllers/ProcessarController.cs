@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using TestAec.API.Commands;
-using TestAec.API.Queries.Abstractions;
-using TestAec.API.Requests;
+using TestAec.Domain.AggregatesModel;
+using TestAec.Domain.AggregatesModel.ViewModel;
 using TestAec.Domain.Exceptions;
 
 namespace TestAec.API.Controllers
@@ -36,7 +36,7 @@ namespace TestAec.API.Controllers
         /// <param name="cardId"></param>
         /// <returns></returns>
         [HttpGet("{cardId}"), Produces("application/json", Type = typeof(IApplicationResult<CardDetalhesViewModel>))]
-        public async Task<IActionResult> ObterCardPorId([FromRoute] Guid cardId) 
+        public async Task<IActionResult> ObterCardPorId([FromRoute] Guid cardId)
             => await CardQuery.ObterCardPorId(cardId);
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace TestAec.API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet(), Produces("application/json", Type = typeof(IApplicationResult<IEnumerable<CardDetalhesViewModel>>))]
-        public async Task<IActionResult> ObterCards() 
+        public async Task<IActionResult> ObterCards()
             => await CardQuery.ObterCards();
     }
 }

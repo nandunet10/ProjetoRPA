@@ -2,10 +2,9 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using TestAec.API.Models;
-using TestAec.API.Queries.Abstractions;
-using TestAec.API.Queries.Concrete;
 using TestAec.Domain.AggregatesModel;
 using TestAec.Infrastructure.Contexts;
+using TestAec.Infrastructure.Queries.Concrete;
 using TestAec.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);

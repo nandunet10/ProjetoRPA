@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace TestAec.API.Requests
+namespace TestAec.Domain.AggregatesModel.ViewModel
 {
     public class CardDetalhesViewModel
     {

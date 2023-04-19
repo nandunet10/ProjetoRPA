@@ -1,12 +1,13 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using System.Data;
-using TestAec.API.Queries.Abstractions;
-using TestAec.API.Queries.RawSql;
-using TestAec.API.Requests;
+using TestAec.Domain.AggregatesModel;
+using TestAec.Domain.AggregatesModel.ViewModel;
 using TestAec.Domain.Exceptions;
+using TestAec.Infrastructure.Queries.RawSql;
 
-namespace TestAec.API.Queries.Concrete
+namespace TestAec.Infrastructure.Queries.Concrete
 {
     public class CardQuery : ICardQuery
     {

@@ -1,4 +1,4 @@
-﻿namespace TestAec.API.Queries.RawSql
+﻿namespace TestAec.Infrastructure.Queries.RawSql
 {
     public static class CardRawSqls
     {
